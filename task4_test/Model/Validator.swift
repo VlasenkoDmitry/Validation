@@ -3,11 +3,11 @@ import UIKit
 
 class Validator {
     
-    func validate(login: String) -> (result: Bool, error: PaginationLoginError?) {
-        if let emptyResult = Rule.isEmpty.check(login) {
+    func validate(login: String) -> (result: Bool, error: ValidationLoginError?) {
+        if let emptyResult = Rules.isEmpty.check(login) {
             return (false, emptyResult)
         } else {
-            var rules = [Rule]()
+            var rules = [Rules]()
             if login.contains("@") {
                 rules = emailRules()
             } else {
@@ -23,12 +23,12 @@ class Validator {
         }
     }
     
-    private func emailRules() -> [Rule] {
-        return [Rule.wordLength, .validEmail]
+    private func emailRules() -> [Rules] {
+        return [Rules.wordLength, .validEmail]
     }
     
-    private func nicknameRules() -> [Rule] {
-        return [Rule.wordLength, .firstLetter, .nickname]
+    private func nicknameRules() -> [Rules] {
+        return [Rules.wordLength, .firstLetterNickname, .fullFormatNickname]
     }
 }
 

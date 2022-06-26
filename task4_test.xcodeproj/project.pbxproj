@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E19223A0286503C80057545C /* PaginationLoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192239F286503C80057545C /* PaginationLoginError.swift */; };
+		E19223A0286503C80057545C /* ValidationLoginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192239F286503C80057545C /* ValidationLoginError.swift */; };
+		E19223A42865E7600057545C /* ValidationChainResponsibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19223A32865E7600057545C /* ValidationChainResponsibility.swift */; };
 		E1B1A795273190DA007415FF /* task4_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1A794273190DA007415FF /* task4_testUITests.swift */; };
 		E1B1A797273190DA007415FF /* task4_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B1A796273190DA007415FF /* task4_testUITestsLaunchTests.swift */; };
 		E1BB4DC5272C183400DF2DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB4DC4272C183400DF2DEE /* AppDelegate.swift */; };
@@ -17,7 +18,20 @@
 		E1BB4DD1272C183900DF2DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1BB4DCF272C183900DF2DEE /* LaunchScreen.storyboard */; };
 		E1BB4DDF272C1E3600DF2DEE /* task4_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB4DDE272C1E3600DF2DEE /* task4_testTests.swift */; };
 		E1BB4DE7272C300700DF2DEE /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BB4DE6272C300700DF2DEE /* Validator.swift */; };
-		E1D5F8C327458E080029AC04 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D5F8C227458E080029AC04 /* Rule.swift */; };
+		E1BD12E328685C96005761B7 /* RulesChainResponsibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD12E228685C96005761B7 /* RulesChainResponsibility.swift */; };
+		E1BD12E528685D5F005761B7 /* ValidationNickname.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD12E428685D5F005761B7 /* ValidationNickname.swift */; };
+		E1BD12E728685D82005761B7 /* ValidationEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD12E628685D82005761B7 /* ValidationEmail.swift */; };
+		E1BD12E928685E2C005761B7 /* CheckEmailAt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD12E828685E2C005761B7 /* CheckEmailAt.swift */; };
+		E1BD12EB28685E41005761B7 /* CheckEmptyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD12EA28685E41005761B7 /* CheckEmptyText.swift */; };
+		E1BD12ED28685E52005761B7 /* CheckWordLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD12EC28685E52005761B7 /* CheckWordLength.swift */; };
+		E1BD12EF28685E64005761B7 /* CheckValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD12EE28685E64005761B7 /* CheckValidEmail.swift */; };
+		E1BD12F128685E75005761B7 /* CheckFirstLetterNickname.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD12F028685E75005761B7 /* CheckFirstLetterNickname.swift */; };
+		E1BD12F328685E88005761B7 /* CheckFullFormatNickname.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD12F228685E88005761B7 /* CheckFullFormatNickname.swift */; };
+		E1BD12F628685ECD005761B7 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD12F528685ECD005761B7 /* Link.swift */; };
+		E1BD12F828685EE0005761B7 /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD12F728685EE0005761B7 /* Branch.swift */; };
+		E1BD12FA28685EF7005761B7 /* BranchingEmailOrNickname.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD12F928685EF7005761B7 /* BranchingEmailOrNickname.swift */; };
+		E1BD12FC28685F0B005761B7 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BD12FB28685F0B005761B7 /* Line.swift */; };
+		E1D5F8C327458E080029AC04 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D5F8C227458E080029AC04 /* Rules.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E192239F286503C80057545C /* PaginationLoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationLoginError.swift; sourceTree = "<group>"; };
+		E192239F286503C80057545C /* ValidationLoginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationLoginError.swift; sourceTree = "<group>"; };
+		E19223A32865E7600057545C /* ValidationChainResponsibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationChainResponsibility.swift; sourceTree = "<group>"; };
 		E1B1A792273190DA007415FF /* task4_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = task4_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1B1A794273190DA007415FF /* task4_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task4_testUITests.swift; sourceTree = "<group>"; };
 		E1B1A796273190DA007415FF /* task4_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task4_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -53,7 +68,20 @@
 		E1BB4DDE272C1E3600DF2DEE /* task4_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = task4_testTests.swift; sourceTree = "<group>"; };
 		E1BB4DE0272C1E3600DF2DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1BB4DE6272C300700DF2DEE /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
-		E1D5F8C227458E080029AC04 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		E1BD12E228685C96005761B7 /* RulesChainResponsibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesChainResponsibility.swift; sourceTree = "<group>"; };
+		E1BD12E428685D5F005761B7 /* ValidationNickname.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationNickname.swift; sourceTree = "<group>"; };
+		E1BD12E628685D82005761B7 /* ValidationEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationEmail.swift; sourceTree = "<group>"; };
+		E1BD12E828685E2C005761B7 /* CheckEmailAt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmailAt.swift; sourceTree = "<group>"; };
+		E1BD12EA28685E41005761B7 /* CheckEmptyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmptyText.swift; sourceTree = "<group>"; };
+		E1BD12EC28685E52005761B7 /* CheckWordLength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckWordLength.swift; sourceTree = "<group>"; };
+		E1BD12EE28685E64005761B7 /* CheckValidEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckValidEmail.swift; sourceTree = "<group>"; };
+		E1BD12F028685E75005761B7 /* CheckFirstLetterNickname.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckFirstLetterNickname.swift; sourceTree = "<group>"; };
+		E1BD12F228685E88005761B7 /* CheckFullFormatNickname.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckFullFormatNickname.swift; sourceTree = "<group>"; };
+		E1BD12F528685ECD005761B7 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		E1BD12F728685EE0005761B7 /* Branch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
+		E1BD12F928685EF7005761B7 /* BranchingEmailOrNickname.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchingEmailOrNickname.swift; sourceTree = "<group>"; };
+		E1BD12FB28685F0B005761B7 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		E1D5F8C227458E080029AC04 /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +109,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E19223A22865E7420057545C /* ModelChainResponsibility */ = {
+			isa = PBXGroup;
+			children = (
+				E19223A32865E7600057545C /* ValidationChainResponsibility.swift */,
+				E1BD12E428685D5F005761B7 /* ValidationNickname.swift */,
+				E1BD12E628685D82005761B7 /* ValidationEmail.swift */,
+				E1BD12E828685E2C005761B7 /* CheckEmailAt.swift */,
+				E1BD12EA28685E41005761B7 /* CheckEmptyText.swift */,
+				E1BD12EC28685E52005761B7 /* CheckWordLength.swift */,
+				E1BD12EE28685E64005761B7 /* CheckValidEmail.swift */,
+				E1BD12F028685E75005761B7 /* CheckFirstLetterNickname.swift */,
+				E1BD12F228685E88005761B7 /* CheckFullFormatNickname.swift */,
+				E1BD12E228685C96005761B7 /* RulesChainResponsibility.swift */,
+			);
+			path = ModelChainResponsibility;
+			sourceTree = "<group>";
+		};
 		E1B1A793273190DA007415FF /* task4_testUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +158,8 @@
 		E1BB4DC3272C183400DF2DEE /* task4_test */ = {
 			isa = PBXGroup;
 			children = (
+				E1BD12F428685EB7005761B7 /* Protocols */,
+				E19223A22865E7420057545C /* ModelChainResponsibility */,
 				E1D5F8BC27457C120029AC04 /* Model */,
 				E1D5F8BE27457C2A0029AC04 /* Controllers */,
 				E1D5F8BF27457C490029AC04 /* Resources */,
@@ -129,6 +176,17 @@
 				E1BB4DE0272C1E3600DF2DEE /* Info.plist */,
 			);
 			path = task4_testTests;
+			sourceTree = "<group>";
+		};
+		E1BD12F428685EB7005761B7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E1BD12F528685ECD005761B7 /* Link.swift */,
+				E1BD12F928685EF7005761B7 /* BranchingEmailOrNickname.swift */,
+				E1BD12F728685EE0005761B7 /* Branch.swift */,
+				E1BD12FB28685F0B005761B7 /* Line.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		E1D5F8BA27457BD30029AC04 /* Application */ = {
@@ -151,8 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				E1BB4DE6272C300700DF2DEE /* Validator.swift */,
-				E1D5F8C227458E080029AC04 /* Rule.swift */,
-				E192239F286503C80057545C /* PaginationLoginError.swift */,
+				E1D5F8C227458E080029AC04 /* Rules.swift */,
+				E192239F286503C80057545C /* ValidationLoginError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -315,10 +373,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1BB4DC9272C183400DF2DEE /* ViewController.swift in Sources */,
-				E1D5F8C327458E080029AC04 /* Rule.swift in Sources */,
+				E1BD12EF28685E64005761B7 /* CheckValidEmail.swift in Sources */,
+				E1BD12F828685EE0005761B7 /* Branch.swift in Sources */,
+				E1BD12F328685E88005761B7 /* CheckFullFormatNickname.swift in Sources */,
+				E1BD12F628685ECD005761B7 /* Link.swift in Sources */,
+				E19223A42865E7600057545C /* ValidationChainResponsibility.swift in Sources */,
+				E1BD12EB28685E41005761B7 /* CheckEmptyText.swift in Sources */,
+				E1D5F8C327458E080029AC04 /* Rules.swift in Sources */,
+				E1BD12ED28685E52005761B7 /* CheckWordLength.swift in Sources */,
+				E1BD12E528685D5F005761B7 /* ValidationNickname.swift in Sources */,
+				E1BD12E928685E2C005761B7 /* CheckEmailAt.swift in Sources */,
+				E1BD12E328685C96005761B7 /* RulesChainResponsibility.swift in Sources */,
+				E1BD12F128685E75005761B7 /* CheckFirstLetterNickname.swift in Sources */,
 				E1BB4DC5272C183400DF2DEE /* AppDelegate.swift in Sources */,
+				E1BD12FA28685EF7005761B7 /* BranchingEmailOrNickname.swift in Sources */,
+				E1BD12FC28685F0B005761B7 /* Line.swift in Sources */,
 				E1BB4DE7272C300700DF2DEE /* Validator.swift in Sources */,
-				E19223A0286503C80057545C /* PaginationLoginError.swift in Sources */,
+				E1BD12E728685D82005761B7 /* ValidationEmail.swift in Sources */,
+				E19223A0286503C80057545C /* ValidationLoginError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
