@@ -8,13 +8,12 @@
 import Foundation
 
 class CheckFirstLetterNickname: Link, Line {
-    var text: String
+    private let text: String
+    private var nextStep: Line?
     
     required init(text: String) {
         self.text = text
     }
-    
-    var nextStep: Line?
     
     func check() -> (result: Bool, error: ValidationLoginError?) {
         if checkFirstLetterNickname() {
@@ -30,4 +29,7 @@ class CheckFirstLetterNickname: Link, Line {
         return RulesChainResponsibility.firstLetterNickname.check(text)
     }
     
+    func setNextStep(nextStep: Line?) {
+        self.nextStep = nextStep
+    }
 }

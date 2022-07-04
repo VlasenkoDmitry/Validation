@@ -8,7 +8,8 @@
 import Foundation
 
 class CheckEmptyText: Link, Line {
-    var text: String
+    private let text: String
+    private var nextStep: Line?
     
     required init(text: String) {
         self.text = text
@@ -25,9 +26,11 @@ class CheckEmptyText: Link, Line {
         }
     }
     
-    var nextStep: Line?
-    
     func checkEmptyText() -> Bool {
         return RulesChainResponsibility.isEmpty.check(text)
+    }
+    
+    func setNextStep(nextStep: Line?) {
+        self.nextStep = nextStep
     }
 }

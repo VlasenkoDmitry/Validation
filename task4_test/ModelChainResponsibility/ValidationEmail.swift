@@ -8,10 +8,10 @@
 import Foundation
 
 class ValidationEmail: Link, Branch {
-    let text: String
-    var emptyText: CheckEmptyText
-    var wordLength: CheckWordLength
-    var validEmail: CheckValidEmail
+    private let text: String
+    private let emptyText: CheckEmptyText
+    private let wordLength: CheckWordLength
+    private let validEmail: CheckValidEmail
 
     required init(text: String) {
         self.text = text
@@ -21,8 +21,8 @@ class ValidationEmail: Link, Branch {
     }
     
     func start() -> (result: Bool, error: ValidationLoginError?) {
-        emptyText.nextStep = wordLength
-        wordLength.nextStep = validEmail
+        emptyText.setNextStep(nextStep: wordLength)
+        wordLength.setNextStep(nextStep: validEmail)
         
         let result = emptyText.check()
         if result.result == true {

@@ -8,13 +8,12 @@
 import Foundation
 
 class CheckFullFormatNickname: Link, Line {
-    var text: String
+    private let text: String
+    private var nextStep: Line?
     
     required init(text: String) {
         self.text = text
     }
-    
-    var nextStep: Line?
     
     func check() -> (result: Bool, error: ValidationLoginError?) {
         if checkFullFormatNickname() {
@@ -29,5 +28,9 @@ class CheckFullFormatNickname: Link, Line {
     
     func checkFullFormatNickname() -> Bool {
         return RulesChainResponsibility.fullFormatNickname.check(text)
+    }
+    
+    func setNextStep(nextStep: Line?) {
+        self.nextStep = nextStep
     }
 }

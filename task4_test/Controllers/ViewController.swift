@@ -3,9 +3,8 @@ import Foundation
 
 class ViewController: UIViewController {
     
+    private let validator = Validator()
     @IBOutlet weak var login: UITextField!
-    
-    let validator = Validator()
     
     override func viewDidLoad() {
         super.viewDidLoad()

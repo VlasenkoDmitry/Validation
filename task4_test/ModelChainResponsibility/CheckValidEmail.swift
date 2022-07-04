@@ -8,13 +8,12 @@
 import Foundation
 
 class CheckValidEmail: Link, Line {
-    var text: String
+    private let text: String
+    private var nextStep: Line?
     
     required init(text: String) {
         self.text = text
     }
-    
-    var nextStep: Line?
     
     func check() -> (result: Bool, error: ValidationLoginError?) {
         if checkValidEmail() {
@@ -29,5 +28,9 @@ class CheckValidEmail: Link, Line {
     
     func checkValidEmail() -> Bool {
         return RulesChainResponsibility.validEmail.check(text)
+    }
+    
+    func setNextStep(nextStep: Line?) {
+        self.nextStep = nextStep
     }
 }

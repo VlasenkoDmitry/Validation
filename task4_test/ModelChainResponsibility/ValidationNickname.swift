@@ -8,11 +8,11 @@
 import Foundation
 
 class ValidationNickname: Link, Branch {
-    let text: String
-    var emptyText: CheckEmptyText
-    var wordLength: CheckWordLength
-    var firstLetterNickname: CheckFirstLetterNickname
-    var fullFormatNickname: CheckFullFormatNickname
+    private let text: String
+    private let emptyText: CheckEmptyText
+    private let wordLength: CheckWordLength
+    private let firstLetterNickname: CheckFirstLetterNickname
+    private let fullFormatNickname: CheckFullFormatNickname
     
     required init(text: String) {
         self.text = text
@@ -23,9 +23,9 @@ class ValidationNickname: Link, Branch {
     }
     
     func start() -> (result: Bool, error: ValidationLoginError?) {
-        emptyText.nextStep = wordLength
-        wordLength.nextStep = firstLetterNickname
-        firstLetterNickname.nextStep = fullFormatNickname
+        emptyText.setNextStep(nextStep: wordLength)
+        wordLength.setNextStep(nextStep: firstLetterNickname)
+        firstLetterNickname.setNextStep(nextStep: fullFormatNickname)
         
         let result = emptyText.check()
         if result.result == true {

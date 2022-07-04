@@ -8,6 +8,6 @@
 import Foundation
 
 protocol Line {
-    var nextStep: Line? { get }
     func check() -> (result: Bool, error: ValidationLoginError?)
+    func setNextStep(nextStep: Line?)
 }

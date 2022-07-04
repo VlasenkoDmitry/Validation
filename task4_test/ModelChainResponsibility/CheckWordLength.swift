@@ -8,7 +8,8 @@
 import Foundation
 
 class CheckWordLength: Link, Line {
-    var text: String
+    private let text: String
+    private var nextStep: Line?
     
     required init(text: String) {
         self.text = text
@@ -25,9 +26,10 @@ class CheckWordLength: Link, Line {
         }
     }
     
-    var nextStep: Line?
-    
     func checkWordLength() -> Bool {
         return RulesChainResponsibility.wordLength.check(text)
+    }
+    func setNextStep(nextStep: Line?) {
+        self.nextStep = nextStep
     }
 }

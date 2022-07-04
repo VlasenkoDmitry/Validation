@@ -8,6 +8,5 @@
 import Foundation
 
 protocol Link {
-    var text: String { get }
     init(text: String)
 }

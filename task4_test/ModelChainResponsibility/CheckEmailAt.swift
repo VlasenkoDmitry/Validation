@@ -8,7 +8,7 @@
 import Foundation
 
 class CheckEmailAt: Link, BranchingEmailOrNickname {
-    var text: String
+    private let text: String
     
     required init(text: String) {
         self.text = text

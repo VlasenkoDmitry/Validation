@@ -8,7 +8,7 @@
 import Foundation
 
 class ValidationChainResponsibility: Link, Branch {
-    var text: String
+    private let text: String
     
     required init(text: String) {
         self.text = text
